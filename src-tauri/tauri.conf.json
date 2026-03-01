@@ -36,12 +36,13 @@
       }
     ],
     "security": {
-      "csp": "default-src 'self'; img-src 'self' https://ddragon.leagueoflegends.com data:; style-src 'self' 'unsafe-inline'; connect-src 'self' https://127.0.0.1:* https://*.api.riotgames.com https://ddragon.leagueoflegends.com"
+      "csp": "default-src 'self'; img-src 'self' https://ddragon.leagueoflegends.com data:; style-src 'self' 'unsafe-inline'; connect-src 'self' https://127.0.0.1:* https://*.api.riotgames.com https://ddragon.leagueoflegends.com https://github.com https://api.github.com"
     }
   },
   "bundle": {
     "active": true,
     "targets": "all",
+    "createUpdaterArtifacts": true,
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
@@ -51,6 +52,14 @@
     ],
     "macOS": {
       "minimumSystemVersion": "12.0"
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDBCOTYxNUNBOUU4NzE1OTgKUldTWUZZZWV5aFdXQytxRjZGVHNUWFBqY25sR2xpQnM3bmxZUmxqUXpUdDNSTWF0cWdnWThkSGcK",
+      "endpoints": [
+        "https://github.com/GuiRCosta/tft/releases/latest/download/latest.json"
+      ]
     }
   }
 }

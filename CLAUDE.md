@@ -79,7 +79,33 @@ tests/               # Testes
 - `npm test` -> Roda testes
 - `npm run lint` -> Verifica codigo
 - `npm run tauri dev` -> Inicia app Tauri em dev
-- `npm run tauri build` -> Build do app Tauri
+- `npm run tauri:build` -> Build do app Tauri
+- `npm run tauri:build:aarch64` -> Build Apple Silicon
+- `npm run tauri:build:x86_64` -> Build Intel Mac
+
+## Build e Distribuicao
+
+### Auto-updater
+- Plugin: tauri-plugin-updater + tauri-plugin-process
+- Endpoint: GitHub Releases (latest.json gerado pelo tauri-action)
+- Chave publica: configurada em tauri.conf.json
+- Chave privada: ~/.tauri/tft-overlay.key (GitHub Secret: TAURI_SIGNING_PRIVATE_KEY)
+
+### CI/CD
+- CI: `.github/workflows/ci.yml` (push main / PRs)
+- Release: `.github/workflows/release.yml` (tag v* / dispatch manual)
+- Matrix: aarch64-apple-darwin + x86_64-apple-darwin
+- Code signing/notarizacao Apple: opcional via GitHub Secrets
+
+### GitHub Secrets necessarios
+- TAURI_SIGNING_PRIVATE_KEY (obrigatorio para releases)
+- TAURI_SIGNING_PRIVATE_KEY_PASSWORD (pode ser vazio)
+- APPLE_CERTIFICATE (quando tiver Developer ID)
+- APPLE_CERTIFICATE_PASSWORD
+- APPLE_SIGNING_IDENTITY
+- APPLE_ID (para notarizacao)
+- APPLE_PASSWORD (app-specific password)
+- APPLE_TEAM_ID
 
 ## Design System
 

@@ -1,0 +1,115 @@
+{
+  "version": "2026-03-01",
+  "patch": "14.5",
+  "compositions": [
+    {
+      "name": "Rebel Blasters",
+      "champions": [
+        "TFT13_Powder",
+        "TFT13_Tristana",
+        "TFT13_Lux",
+        "TFT13_Zeri",
+        "TFT13_MissFortune",
+        "TFT13_Jinx",
+        "TFT13_Silco",
+        "TFT13_Ambessa"
+      ],
+      "coreItems": {
+        "TFT13_Jinx": ["TFT_Item_InfinityEdge", "TFT_Item_LastWhisper"],
+        "TFT13_Ambessa": ["TFT_Item_WarmogsArmor", "TFT_Item_DragonsClaw"]
+      },
+      "winrate": 62.5,
+      "avgPlacement": 3.2,
+      "difficulty": "medium",
+      "contested": 35,
+      "tier": "S"
+    },
+    {
+      "name": "Enforcers",
+      "champions": [
+        "TFT13_Caitlyn",
+        "TFT13_Warwick",
+        "TFT13_Steb",
+        "TFT13_Vi",
+        "TFT13_Loris",
+        "TFT13_Maddie",
+        "TFT13_Vander",
+        "TFT13_Jayce"
+      ],
+      "coreItems": {
+        "TFT13_Maddie": ["TFT_Item_InfinityEdge", "TFT_Item_GiantSlayer"],
+        "TFT13_Vander": ["TFT_Item_WarmogsArmor", "TFT_Item_Redemption"]
+      },
+      "winrate": 58.1,
+      "avgPlacement": 3.5,
+      "difficulty": "easy",
+      "contested": 28,
+      "tier": "S"
+    },
+    {
+      "name": "Chem Bruisers",
+      "champions": [
+        "TFT13_Vladimir",
+        "TFT13_Renni",
+        "TFT13_Sevika",
+        "TFT13_Sett",
+        "TFT13_DrMundo",
+        "TFT13_Urgot",
+        "TFT13_Renata",
+        "TFT13_Silco"
+      ],
+      "coreItems": {
+        "TFT13_Urgot": ["TFT_Item_TitansResolve", "TFT_Item_GiantSlayer"],
+        "TFT13_DrMundo": ["TFT_Item_WarmogsArmor", "TFT_Item_BrambleVest"]
+      },
+      "winrate": 55.3,
+      "avgPlacement": 3.8,
+      "difficulty": "easy",
+      "contested": 22,
+      "tier": "A"
+    },
+    {
+      "name": "Sorcerer Burst",
+      "champions": [
+        "TFT13_Nami",
+        "TFT13_Zyra",
+        "TFT13_Leblanc",
+        "TFT13_Morgana",
+        "TFT13_Swain",
+        "TFT13_Mel",
+        "TFT13_Heimerdinger"
+      ],
+      "coreItems": {
+        "TFT13_Mel": ["TFT_Item_RabadonsDeathcap", "TFT_Item_JeweledGauntlet"],
+        "TFT13_Heimerdinger": ["TFT_Item_HextechGunblade", "TFT_Item_SpearOfShojin"]
+      },
+      "winrate": 53.7,
+      "avgPlacement": 4.0,
+      "difficulty": "hard",
+      "contested": 18,
+      "tier": "A"
+    },
+    {
+      "name": "Pit Fighters",
+      "champions": [
+        "TFT13_Darius",
+        "TFT13_Illaoi",
+        "TFT13_Sett",
+        "TFT13_Ekko",
+        "TFT13_Vi",
+        "TFT13_Gangplank",
+        "TFT13_Ambessa",
+        "TFT13_Rumble"
+      ],
+      "coreItems": {
+        "TFT13_Ambessa": ["TFT_Item_TitansResolve", "TFT_Item_Bloodthirster"],
+        "TFT13_Rumble": ["TFT_Item_RabadonsDeathcap", "TFT_Item_IonicSpark"]
+      },
+      "winrate": 51.2,
+      "avgPlacement": 4.2,
+      "difficulty": "medium",
+      "contested": 15,
+      "tier": "B"
+    }
+  ]
+}

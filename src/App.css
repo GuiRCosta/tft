@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+/* Overlay: fundo totalmente transparente */
+body.overlay-window {
+  background: transparent !important;
+}
+
+body.overlay-window #root {
+  background: transparent !important;
+}

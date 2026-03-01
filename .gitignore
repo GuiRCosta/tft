@@ -36,3 +36,7 @@ data/*.json
 
 # Coverage
 coverage/
+
+# Tauri signing keys
+*.key
+*.key.pub
