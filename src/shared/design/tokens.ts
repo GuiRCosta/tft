@@ -1,0 +1,96 @@
+export const tokens = {
+  colors: {
+    background: {
+      primary: '#0a0a0f',
+      secondary: '#13131a',
+      tertiary: '#1a1a25',
+      overlay: 'rgba(10, 10, 15, 0.85)',
+      overlayHover: 'rgba(10, 10, 15, 0.95)',
+    },
+    text: {
+      primary: '#f0e6d2',
+      secondary: '#a09b8c',
+      muted: '#5b5a56',
+      inverse: '#0a0a0f',
+    },
+    accent: {
+      gold: '#c8aa6e',
+      goldLight: '#f0e6d2',
+      goldDark: '#785a28',
+      goldMuted: '#463714',
+    },
+    cost: {
+      1: '#808080',
+      2: '#11b288',
+      3: '#207ac7',
+      4: '#c440da',
+      5: '#ffb93b',
+    } as Record<number, string>,
+    semantic: {
+      success: '#0acf83',
+      warning: '#ffb020',
+      danger: '#ff4655',
+      info: '#5b9cf4',
+    },
+    health: {
+      high: '#0acf83',
+      medium: '#ffb020',
+      low: '#ff4655',
+      critical: '#ff1744',
+    },
+    tier: {
+      S: '#ffb93b',
+      A: '#c440da',
+      B: '#207ac7',
+      C: '#11b288',
+      D: '#808080',
+    } as Record<string, string>,
+  },
+  typography: {
+    fontFamily: {
+      primary: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      mono: "'JetBrains Mono', 'SF Mono', 'Fira Code', monospace",
+    },
+    fontSize: {
+      xs: '10px',
+      sm: '12px',
+      base: '14px',
+      md: '16px',
+      lg: '18px',
+      xl: '22px',
+      '2xl': '28px',
+      '3xl': '36px',
+    },
+  },
+  spacing: {
+    '2xs': '2px',
+    xs: '4px',
+    sm: '8px',
+    md: '12px',
+    lg: '16px',
+    xl: '24px',
+    '2xl': '32px',
+    '3xl': '48px',
+  },
+  borders: {
+    radius: {
+      sm: '4px',
+      md: '8px',
+      lg: '12px',
+      xl: '16px',
+      full: '9999px',
+    },
+  },
+  overlay: {
+    opacity: {
+      default: 0.85,
+      hover: 0.95,
+      min: 0.3,
+      max: 1.0,
+    },
+    blur: '12px',
+    maxWidth: '320px',
+    padding: '12px',
+    gap: '8px',
+  },
+} as const;
